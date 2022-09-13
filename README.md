@@ -48,3 +48,4 @@ Lietas ( 4.):
    53  git clone https:/github.com/AnreBr/RTR105 - ielādē github repo failus  
    61  history      - parāda visas veiktās komandas kopš  -clear  
   
+Jauna rinda
