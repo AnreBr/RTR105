@@ -1,0 +1,13 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox
+    4  firefox &
+    5  history
+    6  history > history_20220913a.txt
+    7  ls -l
+    8  ls -lt
+    9  history > history_20220913a.txt
+   10  cat history > history_20220913a.txt
+   11  cat history_20220913a.txt 
+   12  ls -lt
+   13  history > history_20220913a.txt
