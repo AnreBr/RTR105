@@ -50,3 +50,4 @@ Lietas ( 4.):
   
 Jauna rinda 
 Otra jaunā rinda
+Commit 20.septembris
