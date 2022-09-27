@@ -51,3 +51,85 @@ Lietas ( 4.):
 Jauna rinda 
 Otra jaunā rinda
 Commit 20.septembris
+
+1  VirtualBox --startvm XP
+    2  quartus
+    3  ls
+    4  git clone https://github.com/AnreBr/RTR105
+    5  ls -l /bin/ls
+    6  whereis ls
+    7  xd RTR105
+    8  cd RTR105
+    9  mkdir Class_06
+   10  cd Class_06
+   11  ls RTR105
+   12  cd RTR105
+   13  ls RTR105
+   14  ls
+   15  cd RTR105
+   16  ls RTR105
+   17  cd
+   18  cd RTR105
+   19  ls
+   20  ls -a
+   21  ls -l
+   22  cd Class_06/
+   23  nano
+   24  nano first
+   25  first.c
+   26  nano first.c
+   27  mv 
+   28  gcc first.c
+   29  gcc help
+   30  gcc --help
+   31  man gcc
+   32  ls
+   33  ls -l
+   34  cat a.out
+   35  a.out
+   36  pwd
+   37  /home/user/RTR105/Class_06/a.out 
+   38  ~/RTR105/Class_06/a.out 
+   39  cd Class
+   40  cd Class_06
+   41  ../Class_06/a.out 
+   42  tree
+   43  nano first.c
+   44  ../Class_06/a.out 
+   45  first.c
+   46  ./a.out
+   47  first.c
+   48  gcc first.c
+   49  ./a.out 
+   50  ./a.out
+   51  echo $?
+   52  gcc first.c
+   53  ./a.out 
+   54  echo $?
+   55  ls
+   56  ls -la
+   57  gcc first.c -o first.out
+   58  nano .gitignore
+   59  mv .gitignore RTR105/
+   60  rm .gitignore
+   61  ls -lta
+   62  gcc first.c -S -sace-temps -o first.out
+   63  gcc first.c -S -save-temps -o first.out
+   64  ls -lte
+   65  ls -lta
+   66  cat first.i
+   67  cd RTR105
+   68  cd ~/RTR105
+   69  nano
+   70  nano .gitignore
+   71  cd ~/RTR105/Class_06/
+   72  gcc first.c -save-temps -o first.out
+   73  ls -lta
+   74  nano first.s
+   75  cat first.s
+   76  hexdump -C first.c
+   77  ~/RTR105/
+   78  cd ~/RTR105
+   79  ./git-upload 06
+   80  history
+
