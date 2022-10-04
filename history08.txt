@@ -1,0 +1,71 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/AnreBr/RTR105
+    4  cd RTR105
+    5  mkdir Class_07
+    6  cd Class_07
+    7  nano printf
+    8  nano printf.c
+    9  gcc printf.c
+   10  nano printf.c
+   11  gcc printf.c
+   12  nano printf
+   13  rm printf
+   14  nano printf.c 
+   15  nano printf
+   16  rm printf
+   17  gcc printf.c
+   18  nano printf.c 
+   19  gcc printf.c
+   20  a.out
+   21  ls
+   22  /a.out
+   23  ~/a.out
+   24  ~/RTR105/Class_07/a.out
+   25  nano printf.c 
+   26  ~/RTR105/Class_07/a.out
+   27  nls
+   28  ls
+   29  ~/a.out
+   30  nano printf.c 
+   31  gcc printf.c
+   32  ~/RTR105/Class_07/a.out
+   33  nano scanf.c
+   34  gcc scanf.c 
+   35  nano
+   36  nano scanf.c 
+   37  gcc scanf.c 
+   38  ls
+   39  mv a.out scanf.out
+   40  ls
+   41  gcc printf.c
+   42  ls
+   43  mv a.out printf.c
+   44  ~/Class_07/scanf.out
+   45  ~/RTR105/Class_07/scanf.out 
+   46  cd RTR105
+   47  cd ~/RTR105
+   48  mkdir Class_08
+   49  cd Class_08
+   50  cd RTR105
+   51  cd ~/RTR105
+   52  nano test1.sh
+   53  test1.sh
+   54  ~/test1.sh
+   55  ~/RTR105/test1.sh
+   56  nano test1.sh
+   57  ./test1.sh
+   58  chmod +x test1.sh
+   59  ./test1.sh 
+   60  nano test1.sh 
+   61  ./test1.sh 
+   62  nano test1.sh 
+   63  ./test1.sh 
+   64  nano test1.sh 
+   65  ./test1.sh 
+   66  nano test1.sh 
+   67  git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+   68  git push https://GITHUB_ACCESS_TOKEN@github.com/GITHUB_USERNAME/REPOSITORY_NAME.git
+   69  git push https://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@github.com/AnreBr/RTR105.git
+   70  history
+
