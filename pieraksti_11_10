@@ -1,0 +1,4 @@
+ char * = 1byte(8biti)
+(* - arī simbolu bin secība atbilst ASCII tabulai)
+ int    = 4byte
+ long long = 8byte

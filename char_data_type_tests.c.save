@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+ {
+ char a = 10; // divas darbības - mainīgā deklarēšana - char a - vietas piešķiršana atmiņā
+              // vērtības piešķiršana - a = 10;
+              // mainīgā nosaukums nevar sākteis ar skaitli, vai saturēt atstarpes
+              // var būt ar mnemonisko nosaukumu, piem. cilindra_tilpums
+ 
