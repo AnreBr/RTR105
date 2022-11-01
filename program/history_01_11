@@ -1,0 +1,32 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://github.com/AnreBr/RTR105
+    4  cd RTR105
+    5  ls
+    6  cd program
+    7  ls
+    8  nano user_function.c
+    9  gcc user_function.c 
+   10  ./a.out
+   11  nano user_function.c
+   12  gcc -g user_function.c 
+   13  ls -lt
+   14  gdb a.out
+   15  nano user_function.c
+   16  gcc user_function.c 
+   17  ./a.out
+   18  nano user_function.c
+   19  gcc user_function.c 
+   20  ./a.out
+   21  nano user_function.c
+   22  nano main_with_arguments.c
+   23  gcc main_with_arguments.c 
+   24  ./a.out
+   25  ./a.out 2
+   26  ./a.out 1 2 1 1 1 1
+   27  nano main_with_arguments.c
+   28  gcc main_with_arguments.c 
+   29  nano main_with_arguments.c
+   30  gcc main_with_arguments.c 
+   31  nano main_with_arguments.c
+   32  history > history_01_11
