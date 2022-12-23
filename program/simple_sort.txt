@@ -1,0 +1,131 @@
+#include <stdio.h>
+
+int sk1, sk2, sk3, temp, izv, izv1;
+char br1, br2, br3, chartemp;
+int output[2];
+char output2[2];
+
+
+int main() {
+    printf("Kārtot skaitļus(1), vai burtus(2)?");
+    scanf("%d",&izv1);
+    
+    if (izv1 == 1)
+    
+    {
+    printf("Ievadi pirmo skaitli:");
+    scanf("%d",&sk1);
+    printf("Ievadi otro skaitli:");
+    scanf("%d",&sk2);
+    printf("Ievadi trešo skaitli:");
+    scanf("%d",&sk3);
+    
+    
+    printf("Izvēlies skaitļu kārtošanas secību- augošā (1), vai diltošā (2):");
+    scanf("%d",&izv);
+
+    output[0] = sk1;
+    output[1] = sk2;
+    output[2] = sk3;
+
+   if (sk1>sk3)
+   {
+      temp = output[0];
+      output[0] = output[2];
+      output[2] = temp;
+   
+       
+   }
+   
+   if (sk1>sk2)
+   {
+      temp = output[0];
+      output[0] = output[1];
+      output[1] = temp;
+   }
+   
+   if (sk2>sk3)
+   {
+      temp = output[1];
+      output[1] = output[2];
+      output[2] = temp;
+   }
+
+
+    if (izv > 0) 
+    {
+        if (izv == 1) printf("%d;%d;%d", output[0], output[1], output[2]);
+    
+        if (izv == 2)
+    {
+        printf("%d;%d;%d", output[2], output[1], output[0]);
+    }
+        
+    }
+    }    
+    
+    
+    
+    if (izv1 == 2)
+    
+    {
+    printf("Ievadi pirmo burtu:");
+    scanf("\n %c",&br1);
+    printf("Ievadi otro burtu:");
+    scanf("\n %c",&br2);
+    printf("Ievadi trešo burtu:");
+    scanf("\n %c",&br3);
+    
+    
+    printf("Izvēlies skaitļu kārtošanas secību- alfabēta (1), vai pretēji (2):");
+    scanf("%d",&izv);
+
+    output2[0] = br1;
+    output2[1] = br2;
+    output2[2] = br3;
+
+   if (br1>br3)
+   {
+      chartemp = output2[0];
+      output2[0] = output2[2];
+      output2[2] = chartemp;
+   
+       
+   }
+   
+   if (br1>br2)
+   {
+      chartemp = output2[0];
+      output2[0] = output2[1];
+      output2[1] = chartemp;
+   }
+   
+   if (br2>br3)
+   {
+      chartemp = output2[1];
+      output2[1] = output2[2];
+      output2[2] = chartemp;
+   }
+
+
+    if (izv > 0) 
+    {
+        if (izv == 1) printf("\n %c;%c;%c", output2[0], output2[1], output2[2]);
+    
+        if (izv == 2)
+    {
+        printf("\n %c;%c;%c", output2[2], output2[1], output2[0]);
+    }
+        
+    }
+    } 
+    
+ 
+ 
+    
+}
+    
+    
+ 
+ 
+    

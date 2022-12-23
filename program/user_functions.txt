@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+int print();
+int reizinaajums1(int x, int y);
+int reizinaajums2(int z, int k);
+int skaitlis();
+
+int main()
+{
+    print();
+    
+   int a = 3;
+   int b = 2;
+   int rez;
+   int sk;
+   
+   reizinaajums1(a, b);
+    
+   rez = reizinaajums2(a, b);
+   
+   printf("funkcijas reizinājums2 return = %d\n", rez);
+   
+   sk = skaitlis();
+   
+   printf("funkcijas skaitlis return = %d\n", sk);
+    
+    
+ return 0;
+}
+ 
+int reizinaajums1(int x, int y)
+ {
+     int rezultaats;
+     rezultaats = x * y;
+     printf("Funkcija reizinājums 1 : %d\n", rezultaats);
+     
+ }
+    
+ int reizinaajums2(int z, int k)
+ {
+     int rezultaats;
+     rezultaats = z * k;
+     return rezultaats;
+ }   
+ int print()
+ {
+     printf("Funkcija print \n");
+ }
+
+int skaitlis()
+{
+    return 5;
+}

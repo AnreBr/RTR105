@@ -1,0 +1,101 @@
+#include <stdio.h>
+ #include <math.h>
+
+ char dt1 = 1, dt11, ind = 0;
+ int dt2 = 1, dt22, iz, i;
+ long long dt3 = 1, dt33, sk, tests = 1;
+
+
+ int main()
+ {
+
+ printf("izvēlies datu tipu darbībai:\n char = 1  int = 2  long long = 3\n");
+ scanf("%d",&iz);
+
+ printf("ievadi skaitli:    ");
+ scanf("%lld",&sk);
+
+     if(iz == 1)
+     {
+         
+         
+         for(i = 1; i <= sk; ++i)
+         {
+             dt11 = dt1;
+             dt1 *= i;
+            
+             if (dt1 < dt22 ) 
+             {
+                
+              printf("kļūda!");
+              ind = 1;
+              
+             
+             }
+
+         }
+
+       if (ind == 0) 
+       {
+          printf("%lld! = %d", sk, dt1);
+       } 
+           
+    }
+    
+    
+
+     else if(iz == 2)
+     {
+        for(i = 1; i <= sk; ++i)
+         {
+             dt2 *= i;
+             tests *= i;
+             if (dt2 < tests) 
+             {
+                
+              printf("kļūda!");
+              ind = 1;
+              break;
+              
+             
+             }
+         }
+         
+
+       if (ind == 0) 
+       {
+          printf("%lld! = %d", sk, dt2);
+       } 
+     }
+     
+
+    else 
+     {
+         for(i = 1; i <= sk; ++i)
+         {
+             dt33 = dt3;
+             dt3 *= i;
+             
+            
+             if (dt3 < dt33) 
+             {
+                
+              printf("kļūda!");
+              ind = 1;
+              
+             
+             }
+
+         }
+
+       if (ind == 0) 
+       {
+          printf("%lld! = %lld", sk, dt3);
+       } 
+         }
+
+       
+     
+
+     return 0;
+ }
