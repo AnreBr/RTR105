@@ -1,0 +1,190 @@
+#include <stdio.h>
+ #include <math.h>
+
+ char wa = 0, dt1;
+ int dt2, iz;
+ long long dt3, st, sk, fa=1;
+ unsigned long long tests;
+
+
+ int main()
+ {
+
+ printf("izvēlies datu tipu darbībai:\n char = 1  int = 2  long long = 3\n");
+ scanf("%d",&iz);
+
+ printf("ievadi skaitli:    ");
+ scanf("%lld",&sk);
+
+     if(iz == 1)
+     {
+         dt1 = sk;
+         tests = dt1;
+         while(sk - fa > 1)
+         {
+             st = sk - fa;
+             tests = tests * st;
+             dt1 = dt1 * st;
+
+            fa++;
+
+            if(tests == dt1);
+            
+            else 
+            {
+            printf("Kļūda! pārsniegts char limits");
+                break;
+            }
+         }
+
+        if (tests == dt1) printf("%lld! = %d", sk, dt1);
+     }
+    
+    
+
+     else if(iz == 2)
+     {
+         dt2 = sk;
+         tests = sk;
+         while(sk - fa > 1)
+         {
+             st = sk - fa;
+             tests = tests * st;
+             dt2 = dt2 * st;
+            fa++;
+
+            if(tests == dt2);
+            
+            else 
+            {
+            printf("Kļūda! pārsniegts int limits");
+                break;
+            }
+         }
+
+        if (tests == dt2) printf("%lld! = %d", sk, dt2);
+     }
+
+    else 
+     {
+         dt3 = sk;
+         tests = sk;
+         while(sk - fa > 1)
+         {
+             st = sk - fa;
+             tests = tests * st;
+             dt3 = dt3 * st;
+         
+            fa++;
+          
+             if(tests |= dt3);
+            
+            else 
+            {
+            printf("Kļūda! pārsniegts long long limits");
+               break;
+            }
+
+         }
+
+         printf("%lld! = %lld", sk, dt3);
+     }
+
+     return 0;
+ }
+
+_____________________________________________________________________________________________________________________
+
+
+
+
+#include <stdio.h>
+ #include <math.h>
+
+ char wa = 0, dt1, tests1;
+ int dt2, iz, tests2;
+ long long dt3, st, sk, fa=1, tests3;
+
+
+ int main()
+ {
+
+ printf("izvēlies datu tipu darbībai:\n char = 1  int = 2  long long = 3\n");
+ scanf("%d",&iz);
+
+ printf("ievadi skaitli:    ");
+ scanf("%lld",&sk);
+
+     if(iz == 1)
+     {
+         dt1 = sk;
+         tests1 = dt1;
+         while(sk - fa > 1)
+         {
+             tests1 = dt1;
+             st = sk - fa;
+             dt1 = dt1 * st;
+             
+
+            fa++;
+
+            if(tests1 > dt1);
+            {
+            printf("Kļūda! pārsniegts char limits");
+                break;
+            }
+         }
+
+        if (tests1 < dt1) printf("%lld! = %d", sk, dt1);
+     }
+    
+    
+
+     else if(iz == 2)
+     {
+         dt2 = sk;
+         while(sk - fa > 1)
+         {
+             st = sk - fa;
+             tests2 = dt2;
+             dt2 = dt2 * st;
+            fa++;
+
+            if(tests2 > dt2);
+            
+            else 
+            {
+            printf("Kļūda! pārsniegts int limits");
+                break;
+            }
+         }
+
+        if (tests2 == dt2) printf("%lld! = %d", sk, dt2);
+     }
+
+    else 
+     {
+         dt3 = sk;
+         while(sk - fa > 1)
+         {
+             st = sk - fa;
+             tests3 = dt3;
+             dt3 = dt3 * st;
+         
+            fa++;
+          
+             if(tests3 > dt3);
+            
+            else 
+            {
+            printf("Kļūda! pārsniegts long long limits");
+               break;
+            }
+
+         }
+
+         if (tests3 == dt3) printf("%lld! = %lld", sk, dt3);
+     }
+
+     return 0;
+ }

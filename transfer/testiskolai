@@ -1,0 +1,77 @@
+ #include <stdio.h>
+ 
+ char wa = 0, dt1;
+ int dt2, iz;
+ long long dt3, st, sk, fa=1;
+ unsigned long long tests;
+ 
+ 
+ int main()
+ {
+ 
+ printf("izvēlies datu tipu darbībai:\n char = 1  int = 2  long long = 3\n");
+ scanf("%d",&iz);
+ 
+ printf("ievadi skaitli:    ");
+ scanf("%lld",&sk);
+ 
+ 
+ if(iz = 1)
+     {
+         dt1 = sk;
+         while(st >= 1)
+         {
+             st = sk - fa;
+             dt1 = dt1 * st;
+             tests = dt1;
+            fa++;
+            
+            if (dt1 != tests)
+            {
+                printf("pārsniegta char datu tipa robeža!");
+                
+                wa = 1;
+                break;
+            
+                
+            }
+               
+         }
+         
+         if (wa = 0) 
+         {
+             printf("%lld! = %d", sk, dt1);
+         }
+             
+         } 
+     
+    else if(iz = 2)
+     {
+         dt2 = sk;
+         while(sk - fa > 1)
+         {
+             st = sk - fa;
+             dt2 = dt2 * st;
+            fa++;
+               
+         }
+         
+         printf("%lld! = %d", sk, dt2);
+     } 
+     
+    else if(iz = 3)
+     {
+         dt3 = sk;
+         while(sk - fa > 1)
+         {
+             st = sk - fa;
+             dt3 = dt3 * st;
+            fa++;
+               
+         }
+         
+         printf("%lld! = %lld", sk, dt3);
+     }
+
+     return 0;
+ }

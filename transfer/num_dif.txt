@@ -1,0 +1,49 @@
+#include <math.h>
+#include <stdio.h>
+
+float a, b, x, delta_x, x_v[1024], y[1024], ypa[1024], ypd[1024], yppa[1024], yppd[1024];
+int k;
+
+int main() {
+    
+    printf("Lūdzu ievadi a vērtību: ");
+    scanf("%f", &a);
+    
+    printf("Lūdzu ievadi b vērtību: ");
+    scanf("%f", &b);
+    
+    printf("Lūdzu ievadi precizitāti: ");
+    scanf("%f", &delta_x);
+    
+    x=a;
+    
+    while (x<b)
+    {
+        
+        x_v[k]=x;
+        y[k]=cosh(sqrt(x));
+        ypa[k]=sinh(sqrt(x))/2*sqrt(x);
+        ypd[k]=(cosh(sqrt(x+delta_x))-cosh(sqrt(x)))/delta_x;
+        yppa[k]=((sqrt(x)*cosh(sqrt(x)))-sinh(sqrt(x)))/4*pow(x, 1.5);
+        yppd[k]=(cosh(sqrt(x+delta_x))-2*cosh(sqrt(x))+cosh(sqrt(x-delta_x)))/pow(delta_x, 2);
+          //printf ("f``(x) analītiski = %f\n\n\n",((sqrt(x)*cosh(sqrt(x)))-sinh(sqrt(x)))/4*pow(x, 1.5));
+        x = delta_x + x;
+        k++;
+    }
+
+    printf("  x          | f'(x) skaitliski | f'(x) ar dif |  f''(x) skaitliski   |    f''(x) ar dif    | f''(x) ar dif |\n");
+    printf("_____________________________________________________________________________________________________________\n");
+
+    for(k=0; k <= 255; k++)
+    {
+    if(x_v[k]>0)
+    {
+    
+    printf("%f   |     %f     |   %f   |    %f          |      %f       | %f      |\n",x_v[k],y[k],ypa[k],ypd[k],yppa[k], yppd[k] );
+    }
+    else break;
+        
+    }
+
+    return 0;
+}

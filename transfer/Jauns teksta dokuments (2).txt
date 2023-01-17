@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include <math.h>
+
+int x, n = 2;
+double a1, a2, a, S, b, c, cosh1, a499, a500, S499, S500;
+double mans_cosh(int);
+
+int main() {
+    
+    printf("cosh(√x) aprēķināšana:\n ");
+    
+    printf("ievadi x vērtību:  ");
+    scanf("%d",&x);
+    cosh1 = cosh(sqrt(x));
+    printf("\ncosh(√%d) = %lf\n\n", x, cosh1);
+    
+    mans_cosh(x);
+    
+    printf("a0 = %lf, S0 = %lf \n",a1,a1);
+    printf("a499 = %lf, S499 = %lf \n",a499,S499);
+    printf("a500 = %lf, S500 = %lf \n",a500,S500);
+    printf("cosh(√%d) caur summu: %lf\n\n", x, cosh1);
+    
+    printf("            500                                       \n");
+    printf("          _______                                         \n");
+    printf("          \\                  k                       \n");
+    printf("           \\                x                       \n");
+    printf("cosh(√%d) = >       __________________                                         \n",x);
+    printf("           /            (2 * k)!                           \n");
+    printf("          /______                                           \n");
+    printf("            k=0                                      \n");
+    printf("                                                   \n");
+    printf("                              x                 \n");
+    printf("rekurences reizinātājs :  ___________                                                  \n");
+    printf("                         (2k -1) * 2k                      \n");
+    printf("                                                   \n");
+    printf("                                                   \n");
+    
+   
+}
+double mans_cosh(x)
+{
+    a1 = pow(x, 0)/1;
+    S = a1;
+    a = pow(x, 1)/2*1;
+
+    S = S + a;
+    
+    
+    while (n <= 500)
+    {
+        c = ((n*2)-1) * (n*2);
+        b = x/c;
+        
+        a = a * b;
+        S = S + a;
+        
+       if (n == 499) 
+       {
+            S499 = S;
+            a499 = a;
+            
+            
+       }
+       else if (n == 500) 
+       {
+           S500 = S;
+           a500 = a;
+            
+        }
+        
+       n++;
+        }
+
+     return S, a, a1;
+    }
