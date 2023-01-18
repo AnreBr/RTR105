@@ -8,11 +8,19 @@
 3. Ieguut teksta videejo ASCII veertiibu.
 4. Ieguut teksta modu un mediaanu.
 
-## Koda rezultaata piemeers
+## Programmas rezultaata piemeers
 
 ![Screenshot1](https://github.com/AnreBr/RTR105/blob/main/transfer/statistika/bildes/Screenshot%20from%202023-01-18%2012-40-08.png)
 
-## Koda darbiiba
+
+## Programmas ierobezhojumi un papildiespeejas
+
+Programma speej uztvert ievadiito tekstu liidz 255 simboliem ieskaitot atstarpes. Programma atpaziist visus ASCII simbolus ieskaitot pointerus u.c. Programma paraada apreekjinus gan iekljaujot atstarpes, gan bez taam.
+ 
+
+
+
+## Koda izklaasts
 
 1. Darbam ar simbolu virkni tiek izmantoti datu masiivi. Shajaa kodaa teksta virknes tureeshanai tika izmantots masiivs burti[255].Veertiiba 255 tika izveeleeta, lai vareetu tureet garaaku tekstu, nekaa viens teikums, lai sho kodu vareetu plashaak pielietot. Pirmaa darbiiba ir ieguut virkni ar simboliem no lietotaaja.
 
@@ -31,5 +39,8 @@
 
 5. Modas veertiiba tiek apreekjinaata atrodot lielaako veertiibu masiivaa modas_veertiibas[], un izprinteejot visas poziicijas kuru veertiibas ir vienaadas ar lielaako veertiibu. Shiis poziicijas ir atbilstoshas ascii veertiibai, taadeelj taas var izprinteet kaa %c datu tipu, un tiks ieguuts simbols.
 
-6. Mediaana tiek ieguuta njemot ciklu 
+![Screenshot4](https://github.com/AnreBr/RTR105/blob/main/transfer/statistika/bildes/Screenshot%20from%202023-01-18%2015-44-39.png)
+
+6. Mediaana tiek ieguuta atrodot videejo, vai divas videejaas simbolu poziicijas burti[] masiivaa. Simboli masiivaa atrodaas pashaas beigaas, taapeec jameklee no beigaam. 
   
+![Screenshot5](https://github.com/AnreBr/RTR105/blob/main/transfer/statistika/bildes/Screenshot%20from%202023-01-18%2015-45-18.png)
