@@ -1,0 +1,142 @@
+#include <math.h>
+#include <stdio.h>
+
+unsigned char burti[255], teksts, temp, temp1, temp2, modas_vērtības[128] ;
+int i, j, n=256, k, vid, vid2, vērtība, skaits, skaits2;
+
+
+int main() {
+  
+    printf("Lūdzu ievadi tekstu : ");
+    gets(burti);
+   
+    printf("\n");
+   
+  
+ 
+  
+   for(i = 0; i < 255; i++)
+    {
+        for(j = 0; j < n; j++ )
+        {
+            if(burti[j] > burti[j+1])
+            {
+                temp = burti[j];
+                burti[j] = burti [j+1];
+                burti[j+1] = temp;
+                 
+           }
+       }
+
+    }
+    
+    for (k = 0; k <= 255; k++)
+     {
+       
+         if (burti[k] > 0) 
+         {
+            
+            modas_vērtības[burti[k]]++;
+            skaits++;
+            vid = vid + burti[k];
+            if (burti[k] == 32) printf("space : ASCII = 32\n");
+            else 
+            {
+                skaits2++;
+                vid2 = vid2 + burti[k];
+                
+                printf(" %c  :\t", burti[k]);
+                printf("ASCII =  %d \t\n", burti[k]) ;
+            } 
+          
+         }
+         else;
+             
+     }
+   
+   
+    vid = vid / skaits;
+    
+    vid2 = vid2 / skaits2;
+    
+    printf("\nZīmju skaits ar space simboliem = %d\n", skaits);
+    printf("Zīmju skaits bez space simboliem = %d\n\n\n", skaits2);
+    if (skaits == skaits2) printf("Vidējais bez space simboliem =  %c  , (ASCII = %d)\n\n\n", vid2, vid2);
+    else 
+    {
+    printf("Vidējais bez space simboliem =  %c  , (ASCII = %d)\n", vid2, vid2);
+    printf("Vidējais ar space simboliem =  %c  , (ASCII = %d)\n\n\n", vid, vid);
+        
+    }
+    
+    for(k = 0; k < 128; k++)
+    {
+        if(modas_vērtības[k]>temp1)
+        {
+            temp1 = modas_vērtības[k];
+        }
+    }
+    
+    for(k = 0; k < 128; k++)
+    {
+        if(temp1 == modas_vērtības[k])
+        {
+            
+          if (temp1 == 1) printf("Moda ir %c, un šī zīme sastopama %d reizi. ASCII vērtība = %d \n", k, temp1, k);
+          else  printf("Moda ir %c, un šī zīme sastopama %d reizes. ASCII vērtība = %d \n", k, temp1, k);
+            
+        }
+    }
+    
+    printf("\n\n");
+    
+    if(skaits == skaits2)
+    {
+        if (skaits2%2 == 1)
+    {
+       skaits2 = skaits2 /2 +1;
+       skaits2 = 255 - skaits2 +1;
+    printf("mediāna bez space simboliem = %c, ASCII = %d\n", burti[skaits2], burti[skaits2]);
+    }
+    else if (skaits2%2 == 0)
+    {
+      skaits2 = 255 - skaits2/2 ;
+      skaits2 = (burti[skaits2] + burti[skaits2+1])/2;
+      
+      printf("mediāna bez space simboliem = %c, ASCII = %d\n",skaits2, skaits2) ;
+     }
+    }
+   
+   else 
+   {
+        if (skaits%2 == 1)
+   {
+       skaits = skaits /2 +1;
+       skaits = 255 - skaits +1;
+       printf("mediāna ar space simboliem = %c, ASCII = %d\n", burti[skaits], burti[skaits]);
+   }
+    else if (skaits%2 == 0)
+    {
+      skaits = 255 - skaits/2 ;
+      skaits = (burti[skaits] + burti[skaits+1])/2;
+      
+     printf("mediāna ar space simboliem = %c, ASCII = %d\n",skaits, skaits);
+    }
+    if (skaits2%2 == 1)
+    {
+       skaits2 = skaits2 /2 +1;
+       skaits2 = 255 - skaits2 +1;
+     
+    printf("mediāna bez space simboliem = %c, ASCII = %d\n", burti[skaits2], burti[skaits2]);
+    }
+    else if (skaits2%2 == 0)
+    {
+      skaits2 = 255 - skaits2/2 ;
+      skaits2 = (burti[skaits2] + burti[skaits2+1])/2;
+    printf("mediāna bez space simboliem = %c, ASCII = %d\n",skaits2, skaits2) ;
+    }
+   }
+   
+    
+    return 0;
+}
